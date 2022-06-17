@@ -3,7 +3,6 @@ import { iconUrlFromCode } from '../services/WeatherService'
 
 function Forcast( {title, items}) {
   return (
-    console.log(items),
     <div>
         <div className="flex ietms-center justify-center mt-6">
             <p className="text-white font-meduim uppercase">{title}</p>
