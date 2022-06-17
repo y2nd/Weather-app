@@ -34,6 +34,8 @@ function TemperatureAndDetails({weather: {
             <p className="text-5xl">{`${temp.toFixed()}°`}</p>
             <div className="flex flex-col space-y-2">
 
+
+                {/* Here you can factorize the code */}
                 <div className="flex font-light items-center text-sm justify-center">
                     <UilTemperature size={18} className="mr-1"/>
                     Real fell:

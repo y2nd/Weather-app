@@ -10,7 +10,7 @@ import {useEffect, useState} from 'react';
 
 function App() {
 
-  const [query, setQuery] = useState({q: "rabat"});
+  const [query, setQuery] = useState({q: "bordeaux"});
 
   const [units, setUnits] = useState("metric");
 
@@ -28,15 +28,15 @@ function App() {
 
   return (
     <div className="mx-auto max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-400">
-      <TopButtons></TopButtons>
-      <Inputs></Inputs>
+      <TopButtons setQuery={setQuery} />
+      <Inputs setQuery={setQuery} units setUnits />
 
       {weather && (
         <>
           <TimeAndLocation weather={weather}/>
           <TemperatureAndDetails weather={weather}/>
-          <Forcast title="hourly forcast"/>
-          <Forcast title="daily forcast"/>
+          <Forcast title="hourly forcast" items={weather.hourly}/>
+          <Forcast title="daily forcast" items={weather.daily}/>
         </>
       )}
 

@@ -1,42 +1,25 @@
 import React from 'react'
+import { iconUrlFromCode } from '../services/WeatherService'
 
-function Forcast( {title}) {
+function Forcast( {title, items}) {
   return (
+    console.log(items),
     <div>
         <div className="flex ietms-center justify-center mt-6">
             <p className="text-white font-meduim uppercase">{title}</p>
         </div>
         <hr className="my-2" />
         <div className="flex flex-row items-center justify-between text-white">
-            <div className="flex flex-col items-center justify-center">
-                <p className="font-light text-sm">04:30 PM</p>
-                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="sunny" className="w-12 my-1" />
-                <p className="font-meduim"> 22°</p>
+            {items.map((item, key) => (
+                <div key={key} className="flex flex-col items-center justify-center">
+                <p className="font-light text-sm">{item.title}</p>
+                <img src={iconUrlFromCode(item.icon)} alt="sunny" className="w-12 my-1" />
+                <p className="font-meduim"> {`${item.temp.toFixed()}°`} </p>
             </div>
+            ))}
+            
 
-            <div className="flex flex-col items-center justify-center">
-                <p className="font-light text-sm">04:30 PM</p>
-                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="sunny" className="w-12 my-1" />
-                <p className="font-meduim"> 22°</p>
-            </div>
-
-            <div className="flex flex-col items-center justify-center">
-                <p className="font-light text-sm">04:30 PM</p>
-                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="sunny" className="w-12 my-1" />
-                <p className="font-meduim"> 22°</p>
-            </div>
-
-            <div className="flex flex-col items-center justify-center">
-                <p className="font-light text-sm">04:30 PM</p>
-                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="sunny" className="w-12 my-1" />
-                <p className="font-meduim"> 22°</p>
-            </div>
-
-            <div className="flex flex-col items-center justify-center">
-                <p className="font-light text-sm">04:30 PM</p>
-                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="sunny" className="w-12 my-1" />
-                <p className="font-meduim"> 22°</p>
-            </div>
+            
         </div>
 
         

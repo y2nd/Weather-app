@@ -12,9 +12,9 @@ function Inputs() {
         </div>
 
         <div className="flex flex-row w-1/4 items-center justify-center ">
-            <button name="metric" className="text-xl text-white font-light">°C</button>
-            <span className="text-xl text-white mx-1">|</span>
-            <button name="imperial" className="text-xl text-white font-light">°F</button>
+            <button name="metric" className="text-xl text-white font-light transition ease-out hover:scale-125">°C</button>
+            <span className="text-xl text-white mx-1" >|</span>
+            <button name="imperial" className="text-xl text-white font-light transition ease-out hover:scale-125">°F</button>
         </div>
 
     </div>
