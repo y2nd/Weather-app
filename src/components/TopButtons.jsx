@@ -22,6 +22,10 @@ function TopButtons( { setQuery }) {
             id: 5,
             title: "Rome",
         },
+        {
+            id: 6,
+            title: "Rabat",
+        }
     ]
   return (
     
