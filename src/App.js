@@ -26,7 +26,7 @@ function App() {
 
       toast.info("Fetching weather for " + message);
 
-      const data = await getFormattedWeatherData({...query, units}).then((data) => {
+      await getFormattedWeatherData({...query, units}).then((data) => {
         toast.success(`Weather for ${data.name}, ${data.country} fetched successfully.`);
         setWeather(data);
       });

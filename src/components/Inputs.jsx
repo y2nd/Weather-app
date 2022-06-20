@@ -18,7 +18,7 @@ function Inputs( {setQuery, units, setUnits} ) {
 
   const handleUnitsChange = (e) => {
     const selectedUnits = e.currentTarget.name;
-    if(units != selectedUnits) setUnits(selectedUnits);
+    if(units !== selectedUnits) setUnits(selectedUnits);
   }
 
   const handleLocationClick = () => {
