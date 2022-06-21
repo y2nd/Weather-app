@@ -1,5 +1,5 @@
 # Live-Weather
-A weather app with an aesthetic view built with React and Tailwind. It uses OpenWeatherMap api to list data based on location. 
+A weather app with an aesthetic view built with React and Tailwind. It uses OpenWeatherMap api to retrieve data based on location. 
 
 ## Install:
 Install dependecies using the following command:
