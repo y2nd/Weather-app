@@ -1,25 +1,21 @@
-# REACT-WEATHER
+# Live-Weather
 A weather app with an aesthetic view built with React and Tailwind. It uses OpenWeatherMap api to list data based on location. 
 
-## Getting Started with Create React App
-
-You need to create an .env file in the root directory and set an API key like this: 
-
+## Install:
+Install dependecies using the following command:
 ```
-API_KEY=your_api_key
+npm i
 ```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You need to create an .env file at the root directory and set an API key like this: 
 
-In the project directory, you can run:
+```
+API_KEY=your_Open_Weather_api_key
+```
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-
+# Launch:
+Launch using the following command:
+```
+npm start
+```
 
